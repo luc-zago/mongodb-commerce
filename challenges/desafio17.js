@@ -7,7 +7,7 @@ db.getCollection("produtos")
 db.getCollection("produtos")
   .count(
     { $text:
-      { $search: "frango hambuguer" },
+      { $search: "\"frango\" \"hamburguer\"" },
     },
   );
 
@@ -15,6 +15,6 @@ db.getCollection("produtos")
 db.getCollection("produtos")
   .count(
     { $text:
-      { $search: "\"frango\" \"hambuguer\"" },
+      { $search: "\"frango\" \"hamburguer\"" },
     },
   ); */
