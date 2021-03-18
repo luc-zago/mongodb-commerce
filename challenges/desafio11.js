@@ -13,4 +13,4 @@ db.getCollection("produtos")
   );
 
 db.getCollection("produtos")
-  .find({}, { tags: 1 });
+  .find({}, { _id: 0, nome: 1, tags: 1 });
