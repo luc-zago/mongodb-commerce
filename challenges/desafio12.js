@@ -9,4 +9,4 @@ db.getCollection("produtos")
   );
 
 db.getCollection("produtos")
-  .find({}, { nome: 1, valoresNutricionais: 1 });
+  .find({}, { _id: 0, nome: 1, valoresNutricionais: 1 });
