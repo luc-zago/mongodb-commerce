@@ -9,5 +9,5 @@ db.getCollection("produtos")
 db.getCollection("produtos")
   .find(
     { ultimaModificacao: { $exists: true } },
-    { nome: 1 },
+    { _id: 0, nome: 1 },
   );
